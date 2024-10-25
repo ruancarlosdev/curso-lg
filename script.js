@@ -6,7 +6,7 @@ function gerarNumeroAleatorio() {
 
     return numero;
 }
-nrAleatorio = gerarNumeroAleatorio();
+//nrAleatorio = gerarNumeroAleatorio();
 
 /*alert("Numero Aleatório: " + nrAleatorio); */
 alert("Numero Aleatorio: " + nrAleatorio);
