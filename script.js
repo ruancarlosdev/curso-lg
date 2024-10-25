@@ -1,4 +1,7 @@
 // Função para gerar um número aleatório entre 1 e 100
+alert("Boas vindas ao jogo do número secreto")
+
+
 let nrAleatorio = Math.random();
 function gerarNumeroAleatorio() {
     let numero = 0;
@@ -6,9 +9,21 @@ function gerarNumeroAleatorio() {
 
     return numero;
 }
+
+/*
+
+    If = se
+    Else = Senão
+    While = Enquanto
+*/
+let chute = prompt("Escolha um número de 1 a 100");
+
+alert("Você digitou o número: " + chute);
+
+
 //nrAleatorio = gerarNumeroAleatorio();
 
 /*alert("Numero Aleatório: " + nrAleatorio); */
-alert("Numero Aleatorio: " + nrAleatorio);
+/*alert("Numero Aleatorio: " + nrAleatorio);
 alert("Numero Aleatorio: " + nrAleatorio +
-    "n/nNumero Gerado: " + gerarNumeroAleatorio());
+    "n/nNumero Gerado: " + gerarNumeroAleatorio());*/
