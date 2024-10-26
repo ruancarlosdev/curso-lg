@@ -20,9 +20,9 @@ while (chute != numeroSecreto){
     
     if (chute == numeroSecreto){
     alert("Você digitou o número secreto!!!");
-}else{
+    }else{
     alert("Você acertou o número secreto");
-}
+    }
 }
 
 
