@@ -17,9 +17,12 @@ function gerarNumeroAleatorio() {
 */
 let chute = prompt("Escolha um número de 1 a 100");
 
-if 
+if (chute == numeroSecreto){
+    alert("Você digitou o número secreto!!!");
+}else{
+    alert("Você acertou o número secreto")
+}
 
-alert("Você digitou o número: " + chute);
 
 
 //nrAleatorio = gerarNumeroAleatorio();
