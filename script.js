@@ -16,7 +16,7 @@ function gerarNumeroAleatorio() {
     While = Enquanto
 */
 while (chute != numeroSecreto){
-    let chute = prompt("Escolha um número de 1 a 100:" + numeroSecreto);
+    let chute = prompt("Escolha um número de 1 a 100:" + ${numeroSecreto});
     
     if (chute == numeroSecreto){
     alert("Você digitou o número secreto!!!");
