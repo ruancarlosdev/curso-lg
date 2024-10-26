@@ -15,14 +15,15 @@ function gerarNumeroAleatorio() {
     Else = Senão
     While = Enquanto
 */
-let chute = prompt("Escolha um número de 1 a 100");
-
-if (chute == numeroSecreto){
+while (chute != numeroSecreto){
+    let chute = prompt("Escolha um número de 1 a 100:" + numeroSecreto);
+    
+    if (chute == numeroSecreto){
     alert("Você digitou o número secreto!!!");
 }else{
     alert("Você acertou o número secreto");
 }
-
+}
 
 
 //nrAleatorio = gerarNumeroAleatorio();
