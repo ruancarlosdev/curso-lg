@@ -11,12 +11,13 @@ function gerarNumeroAleatorio() {
 }
 
 /*
-
     If = se
     Else = Senão
     While = Enquanto
 */
 let chute = prompt("Escolha um número de 1 a 100");
+
+if 
 
 alert("Você digitou o número: " + chute);
 
