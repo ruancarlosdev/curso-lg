@@ -56,7 +56,7 @@ while (chute != numeroSecreto){
     chute = prompt('Escolha um número de 1 a 100: ');
     
     if (chute == numeroSecreto) {
-            alert("Parabéns!!! Você digitou o número secreto!!!");
+            alert(`Parabéns!!! Você digitou o número secreto!!! ${numeroSecreto} com ${tentativas} ${tentativas == 1} ? 'tentativa' : 'tentativas'.`);
     } else {
 
         alert("Você não acertou o número secreto. Tente novamente!");
