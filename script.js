@@ -38,6 +38,7 @@ alert("Boas vindas ao jogo do número secreto");
 let nrAleatorio = Math.random();
 let numeroSecreto = gerarNumeroAleatorio();
 let chute; // Declara a variável 'chute' antes do loop
+let tentativas = 0;
     
 function gerarNumeroAleatorio() {
     let numero = Math.floor(nrAleatorio * 100) + 1;
@@ -50,7 +51,8 @@ function gerarNumeroAleatorio() {
         Else = Senão
         While = Enquanto
     */
-while (chute != numeroSecreto) {
+while (chute != numeroSecreto){
+    tentativas++;
     chute = prompt('Escolha um número de 1 a 100: ');
     
     if (chute == numeroSecreto) {
