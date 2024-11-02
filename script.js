@@ -35,7 +35,7 @@ alert("Numero Aleatorio: " + nrAleatorio +
 
 alert("Boas vindas ao jogo do número secreto");
 
-const maximoTentativas = 100;
+const maximoTentativas = 1000;
 let nrAleatorio = Math.random();
 let numeroSecreto = gerarNumeroAleatorio();
 let chute = 0; // Declara a variável 'chute' antes do loop
