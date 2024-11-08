@@ -60,7 +60,7 @@ while (chute != numeroSecreto){
             alert(`Parabéns!!! Você digitou o número secreto!!! ${numeroSecreto} com ${tentativas} ${tentativas == 1 ? 'tentativa' : 'tentativas'}.`);
     } else {
 
-        alert("Você não acertou o número secreto. Tente novamente!");
+        alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas}`);
         
         if (numeroSecreto > chute){
             alert(`O número secreto é maior ${chute}.`)   
