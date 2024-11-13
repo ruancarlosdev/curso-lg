@@ -1,13 +1,19 @@
-// Função para gerar um número aleatório entre 1 e 100
-     /*alert("Boas vindas ao jogo do número secreto")
+alert("Boas vindas ao jogo do número secreto");
 
+const numeroMaximo = 100;
+const nivelFacil = 20;
+const nivelMedio = 10;
+const nivelDificil = 7;
 
 let nrAleatorio = Math.random();
-function gerarNumeroAleatorio() {
-    let numero = 0;
-    numero = Math.floor(nrAleatorio * 100) +1;
+let numeroSecreto = gerarNumeroAleatorio();
+let chute = 0; // Declara a variável 'chute' antes do loop
+let tentativas = 0;
 
+function gerarNumeroAleatorio() {
+    let numero = Math.floor(nrAleatorio * numeroMaximo) + 1;
     return numero;
+
 }
 
 /*
@@ -15,59 +21,25 @@ function gerarNumeroAleatorio() {
     Else = Senão
     While = Enquanto
 */
-    /*while (chute != numeroSecreto){
-    let chute = prompt(`Escolha um número de 1 a 100:" + ${numeroSecreto}`);
-    
-    if (chute == numeroSecreto){
-    alert("Você digitou o número secreto!!!");
-    }else{
-    alert("Você acertou o número secreto");
-    }
-}
-  */
+if (nivelMedio > tentativas) {
+    while (chute != numeroSecreto) {
+        tentativas++;
+        chute = prompt(`Escolha um número de 1 a ${numeroMaximo}: `);
 
-//nrAleatorio = gerarNumeroAleatorio();
-
-/*alert("Numero Aleatório: " + nrAleatorio); */
-/*alert("Numero Aleatorio: " + nrAleatorio);
-alert("Numero Aleatorio: " + nrAleatorio +
-    "n/nNumero Gerado: " + gerarNumeroAleatorio());*/
-
-alert("Boas vindas ao jogo do número secreto");
-
-const maximoTentativas = 100;
-let nrAleatorio = Math.random();
-let numeroSecreto = gerarNumeroAleatorio();
-let chute = 0; // Declara a variável 'chute' antes do loop
-let tentativas = 0;
-    
-function gerarNumeroAleatorio() {
-    let numero = Math.floor(nrAleatorio * maximoTentativas) + 1;
-    return numero;
-    
-}
-    
-    /*
-        If = se
-        Else = Senão
-        While = Enquanto
-    */
-while (chute != numeroSecreto){
-    tentativas++;
-    chute = prompt(`Escolha um número de 1 a ${maximoTentativas}: `);
-    
-    if (chute == numeroSecreto) {
+        if (chute == numeroSecreto) {
             alert(`Parabéns!!! Você digitou o número secreto!!! ${numeroSecreto} com ${tentativas} ${tentativas == 1 ? 'tentativa' : 'tentativas'}.`);
-    } else {
+        } else {
 
-        alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas}`);
-        
-        if (numeroSecreto > chute){
-            alert(`O número secreto é maior ${chute}.`)   
-        }else{
-            alert(`O número secreto é menor ${chute}`)
-        
+            alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas} de ${nivelMedio}`);
+
+            if (numeroSecreto > chute) {
+                alert(`O número secreto é maior ${chute}.`)
+            } else {
+                alert(`O número secreto é menor ${chute}`)
+
+            }
         }
     }
+} else {
+    alert('Game Over:\nVocê perdeu!!')
 }
-    
