@@ -66,8 +66,8 @@ while (chute != numeroSecreto) {
             }
         }
     } else {
-        alert('Game Over:\nVocê perdeu!!');
-        break; // Para sair do loop quando atingir o limite de tentativas
+    alert('Game Over:\nVocê perdeu!!');
+    break; // Para sair do loop quando atingir o limite de tentativas
     }
 }
 
