@@ -19,16 +19,17 @@ function gerarNumeroAleatorio() {
 }
 
 nivel = prompt(`Escolha um nível do Jogo:
-    \n1 - Nível Fácil: ${nivelFacil}
-    \n2 - Nível Médio: ${nivelMedio}
-    \n3 - Nível Difícil ${nivelDificil}`);
+                1 - Nível Fácil: ${nivelFacil} tentativas
+                2 - Nível Médio: ${nivelMedio} tentativas
+                3 - Nível Difícil ${nivelDificil} tentativas`);
 
     switch (nivel){
-        case "1": nivel_escolhido == nivelFacil;
-        case "2": nivel_escolhido == nivelMedio;
-        case "3": nivel_escolhido == nivelDificil;
+        case 1: nivel_escolhido == nivelFacil;
+        case 2: nivel_escolhido == nivelMedio;
+        case 3: nivel_escolhido == nivelDificil;
 
-    }
+    };
+alert (`O nível escolhido foi ${nivel_escolhido}`);
 
 while (chute != numeroSecreto) {
     tentativas++;
