@@ -10,6 +10,7 @@ let numeroSecreto = gerarNumeroAleatorio();
 let chute = 0; // Declara a variável 'chute' antes do loop
 let tentativas = 0;
 let nivel;
+let nivel_escolhido;
 
 function gerarNumeroAleatorio() {
     let numero = Math.floor(nrAleatorio * numeroMaximo) + 1;
@@ -22,9 +23,16 @@ nivel = prompt(`Escolha um nível do Jogo:
     \n2  - Nível Médio: ${nivelMedio}
     \n3  - Nível Difícil ${nivelDificil}`);
 
+    switch (nivel){
+        case 1: nivel_escolhido == nivelFacil;
+        case 2: nivel_escolhido == nivelMedio;
+        case 3: nivel_escolhido == nivelDificil;
+
+    }
+
 while (chute != numeroSecreto) {
     tentativas++;
-    if (tentativas <= nivelMedio) { // Corrigi a comparação para ser com `tentativas` ao invés de `nivelMedio`
+    if (tentativas <= nivel_escolhido) { // Corrigi a comparação para ser com `tentativas` ao invés de `nivelMedio`
 
         chute = prompt(`Escolha um número de 1 a ${numeroMaximo}: `);
 
@@ -32,9 +40,9 @@ while (chute != numeroSecreto) {
             alert(`Parabéns!!! Você digitou o número secreto!!! ${numeroSecreto} com ${tentativas} ${tentativas == 1 ? 'tentativa' : 'tentativas'}.`);
             break; // Para sair do loop ao acertar o número secreto
         } else {
-            alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas} de ${nivelMedio}`);
+            alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas} de ${nivel_escolhido}`);
         
-        if(tentativas < nivelDificil){
+        if(tentativas < nivel_escolhido){
             if (numeroSecreto > chute) {
                 alert(`O número secreto é maior que ${chute}.`);
             } else {
