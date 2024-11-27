@@ -19,14 +19,14 @@ function gerarNumeroAleatorio() {
 }
 
 nivel = prompt(`Escolha um nível do Jogo:
-    \n01 - Nível Fácil: ${nivelFacil}
-    \n2  - Nível Médio: ${nivelMedio}
-    \n3  - Nível Difícil ${nivelDificil}`);
+    \n1 - Nível Fácil: ${nivelFacil}
+    \n2 - Nível Médio: ${nivelMedio}
+    \n3 - Nível Difícil ${nivelDificil}`);
 
     switch (nivel){
-        case 1: nivel_escolhido == nivelFacil;
-        case 2: nivel_escolhido == nivelMedio;
-        case 3: nivel_escolhido == nivelDificil;
+        case "1": nivel_escolhido == nivelFacil;
+        case "2": nivel_escolhido == nivelMedio;
+        case "3": nivel_escolhido == nivelDificil;
 
     }
 
