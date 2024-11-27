@@ -16,37 +16,6 @@ function gerarNumeroAleatorio() {
 
 }
 
-/*
-    If = se
-    Else = Senão
-    While = Enquanto
-*/
-/*while (chute != numeroSecreto) {
-    tentativas++;
-    if (nivelMedio > tentativas) {
-
-        chute = prompt(`Escolha um número de 1 a ${numeroMaximo}: `);
-
-        if (chute == numeroSecreto) {
-            alert(`Parabéns!!! Você digitou o número secreto!!! ${numeroSecreto} com ${tentativas} ${tentativas == 1 ? 'tentativa' : 'tentativas'}.`);
-        } else {
-
-            alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas} de ${nivelMedio}`);
-
-            if (numeroSecreto > chute) {
-                alert(`O número secreto é maior ${chute}.`)
-            } else {
-                alert(`O número secreto é menor ${chute}`)
-            }
-            }else {
-                alert('Game Over:\nVocê perdeu!!')
-            }
-
-
-
-        }
-    }
-*/
 while (chute != numeroSecreto) {
     tentativas++;
     if (tentativas <= nivelMedio) { // Corrigi a comparação para ser com `tentativas` ao invés de `nivelMedio`
@@ -59,14 +28,14 @@ while (chute != numeroSecreto) {
         } else {
             alert(`Você não acertou o número secreto. Tente novamente! \n\n Número de tentativa(s): ${tentativas} de ${nivelMedio}`);
 
-            if (numeroSecreto > chute) {
+            if ((numeroSecreto > chute) && (tentativas <nivelMedio)) {
                 alert(`O número secreto é maior que ${chute}.`);
             } else {
                 alert(`O número secreto é menor que ${chute}.`);
             }
         }
     } else {
-    alert('Game Over:\nVocê perdeu!!');
+    alert('Game Over:\nVocê perdeu!!!\n\nTente novamente.');
     break; // Para sair do loop quando atingir o limite de tentativas
     }
 }
