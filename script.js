@@ -24,9 +24,9 @@ nivel = prompt(`Escolha um nível do Jogo:
                 3 - Nível Difícil ${nivelDificil} tentativas`);
 
     switch (nivel){
-        case 1: nivel_escolhido == nivelFacil;
-        case 2: nivel_escolhido == nivelMedio;
-        case 3: nivel_escolhido == nivelDificil;
+        case "1": nivel_escolhido == nivelFacil;
+        case "2": nivel_escolhido == nivelMedio;
+        case "3": nivel_escolhido == nivelDificil;
 
     };
 alert (`O nível escolhido foi ${nivel_escolhido}`);
