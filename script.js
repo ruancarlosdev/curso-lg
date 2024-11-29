@@ -28,8 +28,10 @@ nivel = prompt(`Escolha um nível do Jogo:
 switch(nivel){
         case 1: 
         nivel_escolhido = nivelFacil;
+        break;
         case 2: 
         nivel_escolhido = nivelMedio;
+        break;
         case 3: 
         nivel_escolhido = nivelDificil;
 
