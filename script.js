@@ -9,7 +9,7 @@ let nrAleatorio = Math.random();
 let numeroSecreto = gerarNumeroAleatorio();
 let chute = 0; // Declara a variável 'chute' antes do loop
 let tentativas = 0;
-let nivel;
+let nivel = 0;
 let nivel_escolhido;
 
 function gerarNumeroAleatorio() {
@@ -35,7 +35,7 @@ switch(nivel){
         case 3: 
         nivel_escolhido = nivelDificil;
         break;
-    default:
+        default:
         alert(`O número informado é incorreto`)
     };
 
