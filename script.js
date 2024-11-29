@@ -34,7 +34,8 @@ switch(nivel){
         break;
         case 3: 
         nivel_escolhido = nivelDificil;
-
+    default:
+        alert(`O número informado é incorreto`)
     };
 
 /*
