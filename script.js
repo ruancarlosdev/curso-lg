@@ -24,15 +24,18 @@ nivel = prompt(`Escolha um nível do Jogo:
                 3 - Nível Difícil ${nivelDificil} tentativas`);
 
     alert(`O nível escolhido foi ${nivel}`);
-/*
+
 switch(nivel){
-        case 1: nivel_escolhido = nivelFacil;
-        case 2: nivel_escolhido = nivelMedio;
-        case 3: nivel_escolhido = nivelDificil;
+        case 1: 
+        nivel_escolhido = nivelFacil;
+        case 2: 
+        nivel_escolhido = nivelMedio;
+        case 3: 
+        nivel_escolhido = nivelDificil;
 
     };
-*/
 
+/*
 if (nivel == 1){
     nivel_escolhido = nivelFacil;
 } else if (nivel_escolhido == 2){
@@ -42,8 +45,8 @@ if (nivel == 1){
 } else{
     alert('Nada')
 }
-
-alert (`O nível escolhido foi ${nivel_escolhido}`);
+*/
+alert (`O número de tentativas foi ${nivel_escolhido}`);
 
 while (chute != numeroSecreto) {
     tentativas++;
