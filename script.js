@@ -3,7 +3,7 @@ alert("Boas vindas ao jogo do número secreto");
 const numeroMaximo = 100;
 const nivelFacil = 20;
 const nivelMedio = 10;
-const nivelDificil = 7;
+const nivelDificil = 5;
 
 let nrAleatorio = Math.random();
 let numeroSecreto = gerarNumeroAleatorio();
@@ -23,12 +23,26 @@ nivel = prompt(`Escolha um nível do Jogo:
                 2 - Nível Médio: ${nivelMedio} tentativas
                 3 - Nível Difícil ${nivelDificil} tentativas`);
 
-    switch (nivel){
-        case "1": nivel_escolhido == nivelFacil;
-        case "2": nivel_escolhido == nivelMedio;
-        case "3": nivel_escolhido == nivelDificil;
+    alert(`O nível escolhido foi ${nivel}`);
+/*
+switch(nivel){
+        case 1: nivel_escolhido = nivelFacil;
+        case 2: nivel_escolhido = nivelMedio;
+        case 3: nivel_escolhido = nivelDificil;
 
     };
+*/
+
+if (nivel == 1){
+    nivel_escolhido = nivelFacil;
+} else if (nivel_escolhido == 2){
+    nivel_escolhido = nivelMedio;
+} else if (nivel_escolhido == 3){
+    nivel_escolhido = nivelDificil;
+} else{
+    alert('Nada')
+}
+
 alert (`O nível escolhido foi ${nivel_escolhido}`);
 
 while (chute != numeroSecreto) {
