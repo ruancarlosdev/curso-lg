@@ -19,10 +19,10 @@ function gerarNumeroAleatorio() {
     return numero;
 }
 while (!nivelValido.includes(nivel)) {
-    nivel = prompt(`Escolha o nível do Jogo:
+    nivel = parseInt(prompt(`Escolha o nível do Jogo:
                 1 - Nível Fácil: ${nivelFacil} tentativas
                 2 - Nível Médio: ${nivelMedio} tentativas
-                3 - Nível Difícil ${nivelDificil} tentativas`);
+                3 - Nível Difícil ${nivelDificil} tentativas`));
 
     alert(`O nível escolhido foi ${nivel}`);
 
