@@ -10,7 +10,7 @@ let nrAleatorio = Math.random();
 let numeroSecreto = gerarNumeroAleatorio();
 let chute = 0; // Declara a variável 'chute' antes do loop
 let tentativas = 0;
-let nivel = "0";
+let nivel = 0;
 let nivel_escolhido = 0;
 let nivelValido = [1, 2, 3];
 
