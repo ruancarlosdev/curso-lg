@@ -12,12 +12,13 @@ let chute = 0; // Declara a variável 'chute' antes do loop
 let tentativas = 0;
 let nivel = "0";
 let nivel_escolhido = 0;
+let nivelValido = [1, 2, 3];
 
 function gerarNumeroAleatorio() {
     let numero = Math.floor(nrAleatorio * numeroMaximo) + 1;
     return numero;
 }
-while (!nivel[1, 2, 3]) {
+while (!nivelValido.includes(nivel)) {
     nivel = prompt(`Escolha o nível do Jogo:
                 1 - Nível Fácil: ${nivelFacil} tentativas
                 2 - Nível Médio: ${nivelMedio} tentativas
