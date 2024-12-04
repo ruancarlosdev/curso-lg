@@ -24,8 +24,6 @@ while (!nivelValido.includes(nivel)) {
                 2 - Nível Médio: ${nivelMedio} tentativas
                 3 - Nível Difícil ${nivelDificil} tentativas`));
 
-    alert(`O nível escolhido foi ${nivel}`);
-
     // Corrigindo a comparação no switch
     switch (parseInt(nivel)) { // Converte o input para número com parseInt
         case 1:
@@ -67,7 +65,8 @@ if (nivel_escolhido > 0) {
                 }
             }
         } else {
-            alert('Game Over:\nVocê perdeu!!!\n\nTente novamente.');
+            alert(`Game Over:\nVocê perdeu!!!\n\nTente novamente
+                \n\nO número secreto era: ${numeroSecreto}.`);
             break; // Para sair do loop quando atingir o limite de tentativas
         }
     }
